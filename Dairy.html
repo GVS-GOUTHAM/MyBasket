@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="mybasket.css">
+<link rel="stylesheet" href="add-to-cart-interaction/css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="add-to-cart-interaction/css/style.css"> <!-- Resource style -->
+    <script>
+
+  if( !window.jQuery ) document.write('<script src="add-to-cart-interaction/js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="add-to-cart-interaction/js/main.js"></script> 
+
+</head>
+<body>
+
+   <div class="container">
+	  
+  <div class="row">
+	   		<div class="col-md-6"><img src="logo3.jpg" alt="image" width="25%" height="25%">
+			</div>
+			<div class="col-md-6" align="right">
+	  			 <a data-toggle="modal" data-target="#myModal">login</a>&nbsp;
+          
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="text-align: left;">LOGIN</h4>
+        </div>
+        <div class="modal-body">
+          <form action="" method="post">
+            <input type="text" name="username" placeholder="username" id="us">
+            <br>
+            <br>
+            <input type="password" name="password" placeholder="password" id="ps">
+            <br>
+            <br>
+            <button class="btn btn-info btn-md" onclick="v();">Log In</button>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+          <a data-toggle="modal" data-target="#myModal1">signup</a>
+           <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="text-align: left;">SignUp</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <input type="text" name="username" placeholder="username" id="us1">
+            <br>
+            <br>
+            <input type="password" name="password" placeholder="password" id="ps1">
+            <br>
+            <br>
+            <input type="text" name="phonenumber" placeholder="phone number" id="pn1">
+            <br><br>
+            <button class="btn btn-info btn-md " onclick="verify();"> SignUp</button>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+	 			<a href="Homepage.html" ><img src="image.jpg" width="40%" height="40%" ></a>
+	   		</div>
+	   	</div>
+	   	<div align="center">
+	   		<form action="" method="post">
+	   		<input type="text" name="search" placeholder="Enter the item to search here" >
+	   		<input type="submit" class="btn btn-md" value="search">
+	   		</form>
+   		</div>	
+   		<br>
+   		<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="Homepage.html">Home</a></li>
+      <li class="dropdown">
+        <a href="staple.html">Staples</a>
+        <div class="dropdown-content">
+          <a href="staple.html">Edible oils/ghee</a>
+          <a href="staple.html">pickles</a>
+        </div>
+      </li>
+     <li class="dropdown">
+       <a href="beverages.html">Beverages</a>
+        <ul class="dropdown-content">
+          <li><a href="beverages.html">Cool Drinks</a></li>
+          <li><a href="beverages.html">juices</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="veggies.html">Veggies&Fruits</a>
+        <ul class="dropdown-content">
+          <li><a href="veggies.html">Veggies</a></li>
+          <li><a href="veggies">Fruits</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="Branded.html">BrandedItems</a>
+        <ul class="dropdown-content">
+          <li><a href="Branded.html">Noodles & Soups</a></li>
+          <li><a href="Branded.html">choclates</a></li>
+        </ul>
+      </li>
+       <li class="dropdown">
+        <a href="Dairy.html">Dairy & Bread</a>
+        <ul class="dropdown-content">
+          <li><a href="Dairy.html">Dairy</a></li>
+          <li><a href="Dairy.html">Bread</a></li>
+        </ul>
+      </li>
+      <li><a href="offers.html">Best offers</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="header">
+   Dairy
+   </div>
+   <br>
+   <div class="row">
+   <div class="col-md-3">
+      <img src="dairy\1.jpg">
+      <br><br>
+      <span style="text-decoration-style: bold;font-size: 15px;color: black;">AMUL BUTTER<br> 96G</span><br><br>
+      prize: Rs.53
+     <br><br>
+     <a href="#0" class="cd-add-to-cart" data-price="200" style="font-size: 12px;">Add To Cart</a>
+      </div>
+   <div class="col-md-3">
+   <img src="dairy\2.jpg">
+      <br><br>
+         <span style="text-decoration-style: bold;font-size: 15px;color: black;">JERSEY MILK COW 500ML</span><br><br>
+      prize: Rs.22
+     <br><br>
+     <a href="#0" class="cd-add-to-cart" data-price="180" style="font-size: 12px;">Add To Cart</a>
+
+   </div>
+   <div class="col-md-3">
+   <img src="dairy\3.jpg">
+      <br><br>
+         <span style="text-decoration-style: bold;font-size: 15px;color: black;">JERSEY BUTTER MILK 200ML</span><br><br>
+      prize: Rs.12
+     <br><br>
+     <a href="#0" class="cd-add-to-cart" data-price="35" style="font-size: 12px;">Add To Cart</a>
+
+   </div>
+</div>
+<br>
+<hr>
+<div class="header">
+   Bread
+   </div>
+   <br>
+   <div class="row">
+   <div class="col-md-3">
+      <img src="dairy\4.jpg">
+      <br><br>
+      <span style="text-decoration-style: bold;font-size: 15px;color: black;">BRITANNIA BREAD PAV 200G</span><br><br>
+      prize: Rs.20
+    
+     <br><br>
+     <a href="#0" class="cd-add-to-cart" data-price="200" style="font-size: 12px;">Add To Cart</a>
+      </div>
+   <div class="col-md-3">
+   <img src="dairy\5.jpg">
+      <br><br>
+         <span style="text-decoration-style: bold;font-size: 15px;color: black;">BRITANNIA FRUIT BREAD 200G</span><br><br>
+     prize: Rs.20
+     <br><br>
+     <a href="#0" class="cd-add-to-cart" data-price="180" style="font-size: 12px;">Add To Cart</a>
+
+   </div>
+   <div class="col-md-3">
+   <img src="dairy\6.jpg">
+      <br><br>
+         <span style="text-decoration-style: bold;font-size: 15px;color: black;">CHEESE BREAD <br>65GM</span><br><br>
+      prize: Rs.55
+   
+     <br><br>
+     <a href="#0" class="cd-add-to-cart" data-price="35" style="font-size: 12px;">Add To Cart</a>
+
+   </div>
+  
+</div>
+</div>
+<div class="cd-cart-container empty">
+  <a href="#0" class="cd-cart-trigger">
+    Cart
+    <ul class="count"> <!-- cart items count -->
+      <li>0</li>
+      <li>0</li>
+    </ul> <!-- .count -->
+  </a>
+
+  <div class="cd-cart">
+    <div class="wrapper">
+      <header>
+        <h2>Cart</h2>
+        <span class="undo">Item removed. <a href="#0">Undo</a></span>
+      </header>
+      
+      <div class="body">
+        <ul>
+          <!-- products added to the cart will be inserted here using JavaScript -->
+        </ul>
+      </div>
+
+      <footer>
+        <a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
+      </footer>
+    </div>
+  </div> <!-- .cd-cart -->
+</div> <!-- cd-cart-container -->
+
+</body>
+</html>
